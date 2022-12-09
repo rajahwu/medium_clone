@@ -1,5 +1,6 @@
 @import './stylesheets/header.css';
 @import './stylesheets/hero.css';
+@import './stylesheets/trending.css';
 
 :root {
   --main-text-color: hsla(0, 0%, 0%, 0.8);
