@@ -1,11 +1,16 @@
+@import './stylesheets/header.css';
+@import './stylesheets/hero.css';
+
 :root {
   --main-text-color: hsla(0, 0%, 0%, 0.8);
   --primary-color: hsl(44, 100%, 55%);
-  --bg-color: hsl(0, 0%, 75%);
+  --bg-color: hsl(0, 0%, 75%,0.8);
   --border-color: hsl(0, 0%, 16%);
 }
 
 * {
+  padding: 0;
+  margin: 0;
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
@@ -24,8 +29,6 @@
 
 .header {
   grid-area: header;
-  display: flex;
-  align-items: center;
 }
 
 .header ul {

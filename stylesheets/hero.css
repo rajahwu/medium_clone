@@ -1,0 +1,38 @@
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: var(--primary-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.hero__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5vw;
+    height: 25vh;
+    margin: 8.5rem 0;
+    gap: 2rem;
+}
+
+.hero__main-title {
+    font-size: 6rem;
+}
+
+.hero__main-text {
+    font-size: 1.8rem;
+    line-height: 1.5rem;
+    padding: 20px 0;
+}
+
+.hero__main-btn {
+    width: fit-content;
+    padding: 10px 50px;
+    border-radius: 15px;
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+    background-color: var(--border-color);
+}
+
+
+

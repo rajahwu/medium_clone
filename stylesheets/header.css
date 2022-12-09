@@ -1,0 +1,31 @@
+.header {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 0.5fr;
+    background-color: var(--primary-color);
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header__logo {
+    font-size: 2rem;
+}
+
+.header__links {
+    font-size: 1rem;
+}
+
+.header__link-item {
+    padding: 5px;
+    color: inherit;
+}
+
+.header__signup-btn {
+    padding: 10px;
+    border-radius: 15px;
+    color: hsl(0, 0%, 100%);
+    background-color: var(--border-color);
+}
+
