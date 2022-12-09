@@ -1,6 +1,8 @@
 @import './stylesheets/header.css';
 @import './stylesheets/hero.css';
 @import './stylesheets/trending.css';
+@import './stylesheets/main.css';
+@import './stylesheets/main-links.css';
 
 :root {
   --main-text-color: hsla(0, 0%, 0%, 0.8);
@@ -30,6 +32,7 @@
 
 .header {
   grid-area: header;
+  z-index: 10;
 }
 
 .header ul {

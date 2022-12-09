@@ -1,0 +1,40 @@
+.main__links {
+    /* border: 1px solid rebeccapurple; */
+    /* margin: 5px 1px; */
+}
+
+.main__links-title {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 5px 15px;
+}
+
+.main__links-btns {
+display: flex;
+flex-wrap: wrap;
+gap: 5px;
+
+padding: 15px;
+}
+
+.main__link-btn {
+    padding: 0.5rem;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    opacity: 0.8;
+    border-radius: 2px;
+}
+
+.main__links-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 95%;
+    
+    border-top: 1px solid grey;
+    padding: 15px;
+}
+
+.main__links-footer a {
+    color: inherit;
+}
