@@ -1,0 +1,55 @@
+:root {
+  --main-text-color: hsla(0, 0%, 0%, 0.8);
+  --primary-color: hsl(44, 100%, 55%);
+  --bg-color: hsl(0, 0%, 75%);
+  --border-color: hsl(0, 0%, 16%);
+}
+
+.page__container {
+  display: grid;
+  grid-template-rows: 0.1fr 0.5fr 0.6fr 1.5fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 
+  "header header"
+  "hero hero"
+  "trending trending"
+  "main main";
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+}
+
+.hero {
+  grid-area: hero;
+}
+
+.trending-topics {
+  grid-area: trending;
+}
+
+.trending-topics__article-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.main {
+  grid-area: main;
+  display: flex;
+}
+
+.main__article-container {
+  /* display: flex; */
+  /* flex-direction: column; */
+
+}
+
+.main__article{
+  grid-area: main;
+}
+
+.main__links {
+  grid-area: aside;
+}
