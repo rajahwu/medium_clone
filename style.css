@@ -3,12 +3,15 @@
 @import './stylesheets/trending.css';
 @import './stylesheets/main.css';
 @import './stylesheets/main-links.css';
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans&family=Neucha&family=Noto+Sans&display=swap');
 
 :root {
   --main-text-color: hsla(0, 0%, 0%, 0.8);
   --primary-color: hsl(44, 100%, 55%);
   --bg-color: hsl(0, 0%, 75%,0.8);
   --border-color: hsl(0, 0%, 16%);
+  --primary-font-family: 'Martel Sans', sans-serif;
+  --secondary-font-family: 'Noto Sans', sans-serif;
 }
 
 * {
@@ -17,6 +20,7 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  font-family: var(--primary-font-family);
 }
 
 .page__container {
@@ -41,37 +45,10 @@
 
 .hero {
   grid-area: hero;
-  /* transition-property: padding; */
-  /* transition-timing-function: linear; */
-  /* transition-duration: 1s; */
-  /* transition-delay: 1s; */
 }
 
 .trending-topics {
   grid-area: trending;
-}
-
-.trending-topics__article-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-
-@media screen and (max-width: 900px) {
-  .trending-topics__article-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
-
-  .hero {
-    padding: 150px 0;
-  }
-
-  .main {
-    display: flex;
-    flex-direction: column-reverse;
-  }
 }
 
 .main {
@@ -87,3 +64,46 @@
   grid-area: aside;
 }
 
+
+@media screen and (max-width: 900px) {
+  .header__links {
+    display: none;
+  }
+
+  .header__signup {
+    transform: translateX(70px);
+  }
+
+  .hero {
+    display: flex;
+  }
+
+  .hero__image-container {
+    display: none;
+}
+
+  .trending-topics__article-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .hero {
+    padding: 150px 0;
+    /* width: 100%; */
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  
+  .hero__main-title {
+    line-height: 6.5rem;
+  }
+
+  .main__links-footer {
+    display: none;
+  }
+}

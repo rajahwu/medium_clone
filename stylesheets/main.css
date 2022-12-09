@@ -4,6 +4,11 @@
     display: flex;
 }
 
+.main__article-container {
+    flex-basis: 90%;
+    padding: 10px 50px 0;
+}
+
 .main__article-content {
     display: flex;
     flex-direction: column;
