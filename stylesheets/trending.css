@@ -1,3 +1,13 @@
+.trending-topics {
+    padding: 20px;
+    
+}
+
+.trending-topics__article-container {
+    width: fit-content;
+    background-color: blue; 
+}
+
 .trending-topics__article {
     padding: 5px;
     margin: 3px;

@@ -41,6 +41,10 @@
 
 .hero {
   grid-area: hero;
+  /* transition-property: padding; */
+  /* transition-timing-function: linear; */
+  /* transition-duration: 1s; */
+  /* transition-delay: 1s; */
 }
 
 .trending-topics {
@@ -51,6 +55,23 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 900px) {
+  .trending-topics__article-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .hero {
+    padding: 150px 0;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .main {
@@ -65,3 +86,4 @@
 .main__links {
   grid-area: aside;
 }
+
